@@ -1,3 +1,25 @@
+body {
+  background-image: linear-gradient(white, #884288);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "titulo titulo" "menu principal" "pie pie"; }
+  body nav {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body nav ul {
+      list-style-type: none; }
+      body nav ul li {
+        cursor: pointer;
+        font-size: 4vh;
+        border: solid 1px #330033;
+        text-align: center;
+        border-radius: 5px; }
+        body nav ul li a {
+          text-decoration: none; }
+
 header {
   grid-area: titulo;
   display: flex;
@@ -6,21 +28,22 @@ header {
   color: purple;
   text-shadow: 3px 5px 5px gray;
   font-size: 7vh; }
-  header nav {
-    grid-area: menu;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header nav ul {
-      list-style-type: none; }
-      header nav ul li {
-        cursor: pointer;
-        font-size: 4vh;
-        border: solid 1px #330033;
-        text-align: center;
-        border-radius: 5px; }
-        header nav ul li a {
-          text-decoration: none; }
+
+nav {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      cursor: pointer;
+      font-size: 4vh;
+      border: solid 1px #330033;
+      text-align: center;
+      border-radius: 5px; }
+      nav ul li a {
+        text-decoration: none; }
 
 body main {
   grid-area: principal;
@@ -38,10 +61,3 @@ body footer {
   flex-direction: row;
   font-size: 2,5vh;
   color: white; }
-
-body {
-  background-image: linear-gradient(white, #884288);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "titulo titulo" "menu principal" "pie pie"; }

@@ -1,0 +1,25 @@
+body {background-image: linear-gradient(white, rgb(136, 66, 136));
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo titulo"
+                       "menu principal"
+                       "pie pie";  
+      nav {grid-area: menu;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul{
+                           list-style-type: none;
+                             li{
+                               cursor: pointer;
+                               font-size: 4vh;
+                               border: solid 1px rgb(51, 0, 51);
+                               text-align: center;
+                               border-radius: 5px;
+                               a { text-decoration: none}
+                            }
+                        }
+                   }                           
+              
+}
