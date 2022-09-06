@@ -1,0 +1,17 @@
+@import "./header";
+@import "./main";
+@import "./footer";
+
+body {background-image: linear-gradient(white, rgb(136, 66, 136));
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "titulo titulo"
+                         "menu principal"
+                         "pie pie";             
+                
+  }
+  
+
+  
+    

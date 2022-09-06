@@ -1,0 +1,25 @@
+
+        header { grid-area: titulo;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:purple;
+                text-shadow: 3px 5px 5px gray;
+                font-size: 7vh;
+                nav {grid-area: menu;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     ul{
+                        list-style-type: none;
+                          li{
+                            cursor: pointer;
+                            font-size: 4vh;
+                            border: solid 1px rgb(51, 0, 51);
+                            text-align: center;
+                            border-radius: 5px;
+                            a { text-decoration: none}
+                         }
+                     }
+                }
+        }
