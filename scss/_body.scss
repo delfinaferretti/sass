@@ -18,8 +18,10 @@ body {background-image: linear-gradient(white, rgb(136, 66, 136));
                                text-align: center;
                                border-radius: 5px;
                                a { text-decoration: none}
+                               a :hover {color: $color-violeta}
                             }
                         }
                    }                           
               
 }
+
