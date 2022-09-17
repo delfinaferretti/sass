@@ -3,7 +3,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "titulo titulo" "menu principal" "pie pie"; }
+  grid-template-areas: "titulo titulo" "menu principal" "pie pie";
+  /* Menu web */
+  /* Menu mobile */ }
   body nav {
     grid-area: menu;
     display: flex;
@@ -19,8 +21,16 @@ body {
         border-radius: 5px; }
         body nav ul li a {
           text-decoration: none; }
-        body nav ul li a :hover {
+        body nav ul li a:hover {
           color: #5e1742; }
+        body nav ul li a:visited {
+          color: #49394d; }
+        body nav ul li a:hover {
+          color: black; }
+      body nav ul li:hover {
+        transform: scale(1, 2); }
+  body .menu2 {
+    display: none; }
 
 header {
   grid-area: titulo;
@@ -31,20 +41,33 @@ header {
   text-shadow: 3px 5px 5px gray;
   font-size: 7vh; }
 
-nav {
-  grid-area: menu;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 body main {
   grid-area: principal;
   font-style: italic;
   font-size: 3vh;
-  color: black; }
+  color: black;
+  /* Pagina home */
+  /* Pagina atencion veterinaria */ }
   body main img {
     height: 30vh;
     width: 30vh; }
+  body main #imagen-veterinario {
+    width: 120vh;
+    height: 80vh; }
+  body main .dropdown {
+    border: 1px solid black;
+    display: inline-block; }
+  body main .dropdown:hover .dropdown-content {
+    display: block;
+    transform: scale(1, 2); }
+  body main .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4); }
+  body main .dropdown-content:hover {
+    color: #FFFFFF;
+    background-color: #ad00bd; }
 
 body footer {
   grid-area: pie;
@@ -58,3 +81,45 @@ body footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+@media screen and (max-width: 500px) {
+  .titulo {
+    font-size: 4.5vh; }
+  .item {
+    font-size: 3vh; }
+  .grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulo" "menu" "principal" "pie"; }
+  .imagenmain {
+    height: 14vh;
+    width: 14vh; }
+  #imagen-veterinario {
+    width: 50vh;
+    height: 40vh; }
+  #menu {
+    display: none; }
+  .menu2 {
+    display: flex;
+    justify-content: center; }
+  #menu-2-logo {
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    color: #49394d;
+    font-size: 5vh; }
+  .menu2-content {
+    display: none;
+    background-color: #a02ab8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .menu2-content a {
+    color: #f8efef;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+  .menu2-content a:hover {
+    background-color: #b971c7; }
+  .menu2:hover .menu2-content {
+    display: block; } }

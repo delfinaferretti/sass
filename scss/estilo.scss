@@ -6,6 +6,38 @@
 @import "./mixins";
 
 * {@include reset;}
+@media screen and (max-width: 500px) {
+                                      .titulo {font-size: 4.5vh;}
+                                      .item {font-size: 3vh;}
+                                      .grilla {grid-template-columns: 1fr;
+                                               grid-template-rows: auto auto auto auto;
+                                               grid-template-areas: "titulo"
+                                                                     "menu"
+                                                                   "principal"
+                                                                     "pie";}
+                                      .imagenmain { height: 14vh; width: 14vh;}
+                                      #imagen-veterinario {width: 50vh; height: 40vh;}
+                                      #menu {display:none}
+                                      .menu2 {display: flex;
+                                              justify-content: center; }
+                                      #menu-2-logo {height: 15vh;
+                                                    width: 15vh;
+                                                    display: flex;
+                                                    color:#49394d;
+                                                    font-size: 5vh;}
+                                      .menu2-content {display: none;
+                                                      background-color: #a02ab8;
+                                                      min-width: 160px;
+                                                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                                      z-index: 1;} 
+                                       .menu2-content a {color: rgb(248, 239, 239);
+                                                         padding: 12px 16px;
+                                                         text-decoration: none;
+                                                         display: block;}    
+                                       .menu2-content a:hover {background-color: #b971c7}
+                                       .menu2:hover .menu2-content {display: block;}
+  
+  }
 
   
     
